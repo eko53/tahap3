@@ -27,11 +27,11 @@
   <button @click="daftar">Klik Tombol</button>
   <hr />
   
-  <input type="text" @keydown="inputText($event)">
+  <input type="text" @keydown.tab="inputText($event)"> <!--pada saat tombol TAB di " Tekan " (key DOWN . tab) -->
   <p>{{ output }}</p>
   <hr />
   
-  <input type="text" @keyup.enter="inputText2($event)">
+  <input type="text" @keyup.enter="inputText2($event)"> <!--pada saat tombol ENTER di " lepas " (key UP . enter) -->
   <p>{{ output2 }}</p>
   <hr />
   
